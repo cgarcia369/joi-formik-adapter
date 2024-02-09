@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "outDir": "./dist",
+        "lib": ["ES2019"],
+        "skipDefaultLibCheck": true,
+
+    },
+    "include": ["./"],
+    "exclude": [
+        "node_modules",
+        "samples",
+        "tests",
+        "dist",
+        "coverage",
+    ]
+}
