@@ -17,15 +17,13 @@ import { Formik } from 'formik';
 import { joiFormikAdapter } from 'joi-formik-adapter';
 
 const Schema = Joi.object({
-    name: Joi.string().required(),
-    age: Joi.number().optional()
+  name: Joi.string().required(),
+  age: Joi.number().optional(),
 }).messages({
-        "any.required": "Required",
-        "string.empty": "Required",
-        "number.base": "Invalid number"
-    })
-};
-
+  "any.required": "Required",
+  "string.empty": "Required",
+  "number.base": "Invalid number",
+});
 const Component = () => (
   <Formik
     validationSchema={joiFormikAdapter(Schema)}
