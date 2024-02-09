@@ -1,9 +1,10 @@
 {
   "name": "joi-formik-adapter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An adapter of joi object validation to Formik validation schema",
   "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest --coverage"
   },
   "repository": {
